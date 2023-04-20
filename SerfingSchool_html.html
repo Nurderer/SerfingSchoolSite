@@ -28,9 +28,8 @@
         </div>
         
         <span class="introBlock">
-            <h1>О ШКОЛЕ, О СЕРФИНГЕ, О КАНАРАХ</h1>
-            <p>/
-            </p>
+            <h1>О ШКОЛЕ, О СЕРФИНГЕ, О КАНАРАХ</h1><!-- слэш сделать через псевдоэлемент ::after с position:absolut  -->
+            
             <!--.introBlock__Text {
     column-count: 2;
     column-gap: 20px;
@@ -99,7 +98,7 @@
                 <p>Весь тренерский состав регулярно участвует в семинарах и курсах повышения квалификации, которые проводятся по всему миру различными известными серф-клубами и федерациями. Поэтому в нашей школе серфинга вы можете быть спокойны: вас обучают лучшие тренеры!</p>
                 <p>Методика обучения серфингу рассчитана как на новичков, на серферов среднего уровня, так и на серферов уровня ТОП. Тренеры находят подход к каждому, несмотря на то, что обучение серфингу в нашей школе производится в группах. Однако, мы предлагаем персональные уроки серфинга - только вы и тренер!</p>
             </span>
-            <img src="C:\Users\Бухгалтер\OneDrive\Рабочий стол\Project\conquer peak.jpg" class="conquerPeak__image" width="960" height="850">
+            <img src="C:\Users\Бухгалтер\OneDrive\Рабочий стол\Project\conquer peak.jpg" class="conquerPeak__image" alt="conquer-peak" width="960" height="850">
         </div>
 
         <div class="gallery">
@@ -111,17 +110,81 @@
                 <a href="#" class="galleryLinks__profi">ПРОФИ</a>
             </nav>
             <div class="gallery_Images">
-                <img src="C:\Users\Бухгалтер\OneDrive\Рабочий стол\Project\Gallery\sea-wave.jpg">
-                <img src="C:\Users\Бухгалтер\OneDrive\Рабочий стол\Project\Gallery\baby-board.jpg">
-                <img src="C:\Users\Бухгалтер\OneDrive\Рабочий стол\Project\Gallery\man-board.jpg">
-                <img src="C:\Users\Бухгалтер\OneDrive\Рабочий стол\Project\Gallery\women-board.jpg">
-                <img src="C:\Users\Бухгалтер\OneDrive\Рабочий стол\Project\Gallery\sea-top-view.jpg">
-                <img src="C:\Users\Бухгалтер\OneDrive\Рабочий стол\Project\Gallery\girl-board-sand.jpg">
+                <img src="C:\Users\Бухгалтер\OneDrive\Рабочий стол\Project\Gallery\sea-wave.jpg" alt="sea-wave" width="580" height="280">
+                <img src="C:\Users\Бухгалтер\OneDrive\Рабочий стол\Project\Gallery\baby-board.jpg" alt="baby-board" width="290" height="280">
+                <img src="C:\Users\Бухгалтер\OneDrive\Рабочий стол\Project\Gallery\man-board.jpg" alt="man-board" width="250" height="280">
+                <img src="C:\Users\Бухгалтер\OneDrive\Рабочий стол\Project\Gallery\women-board.jpg" alt="women-board" width="290" height="280">
+                <img src="C:\Users\Бухгалтер\OneDrive\Рабочий стол\Project\Gallery\sea-top-view.jpg" alt="sea-top-view" width="290" height="280">
+                <img src="C:\Users\Бухгалтер\OneDrive\Рабочий стол\Project\Gallery\girl-board-sand.jpg" alt="girl-board-sand" width="580" height="280">
             </div>
             <button class="galleryButton" type="button">ПОКАЗАТЬ ЕЩЕ</button>
         </div>
 
+        <div class="quote1">
+            <blockquote>
+                <p>"Если сомневаешься - иди катайся."</p>
+                <cite>Нэт Янг, первый Чемпион Мира по сёрфингу</cite>
+            </blockquote>
+        </div>
 
+        <div class="videoSeaside">
+            <video width="1200" height="600" autoplay="autoplay" poster="C:\Users\Бухгалтер\OneDrive\Рабочий стол\Project\video-preview.png">
+                <source src="C:\Users\Бухгалтер\OneDrive\Рабочий стол\Project\pexels-jess-loiterton-4782595-1280x720-30fps.mp4">
+            </video>
+        </div>
+
+        <div class="numContainer">
+            <div class="numContainer__block">
+                <p class="num">450</p>
+                <p class="numContainer__text">туристов</p>
+            </div>
+            <div class="numContainer__block">
+                <p class="num">2500</p>
+                <p class="numContainer__text">часов катания</p>
+            </div>
+            <div class="numContainer__block">
+                <p class="num">10</p>
+                <p class="numContainer__text">проф. тренеров</p>
+            </div>
+            <div class="numContainer__block">
+                <p class="num">365</p>
+                <p class="numContainer__text">дней в году</p>
+            </div>
+        </div>
+
+        <span class="blog">
+            <p>БЛОГ</p>
+        </span>
+
+        <div class="slideshow">
+            <div class="slide">
+                <img src="C:\Users\Бухгалтер\OneDrive\Рабочий стол\Project\Slideshow\blog-serfer-wave.jpg" alt="serfer-wave" style="width: 100%;">
+                <p>ЧТО НЕОБХОДИМО ВЗЯТЬ С СОБОЙ НА СЕРФ ТУР</p>
+                <p>ТОП 20 необходимых вещей для комфортного отдыха и обучения</p>
+            </div>
+            <div class="slide">
+                <img src="#"> <!-- не забыть найти картинки-->
+                <p>СОЛНЕЧНЫЕ ОЧКИ</p>
+                <p>...</p>
+            </div>
+            <div class="slide">
+                <img src="#">
+                <p>СОЛНЦЕЗАЩИТНЫЙ КРЕМ</p>
+                <p>...</p>
+            </div>
+            <div class="slide">
+                <img src="#">
+                <p>ШЛЁПКИ</p>
+                <p>...</p>
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
     </main>
     <footer>
